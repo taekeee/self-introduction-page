@@ -1,0 +1,276 @@
+
+body{
+    background-color: rgb(212, 236, 236);
+}
+
+.frame{
+    margin-top:30px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    /*전체적인 frame의 margin설정, margin:30px 150px와 동일한 작성법*/
+
+    display: flex;
+    flex-direction: column; /*frame 축 방향 설정 : 세로 방향(위에서 아래)*/
+}
+
+/*navigator*/
+.navigator{
+    display: flex;
+    position:fixed;
+    left:150px;
+}
+
+.site-name{
+    align-self: center; /*현재 기준 축:row, align은 축의 수직방향으로 정렬, self는 해당 아이템을 정렬*/
+    margin:0;
+    font-size:30px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+ul{
+    padding-left:950px;
+}
+
+li{
+    display: inline; /*list를 inline특성으로 변경*/
+    align-self: center; /*현재 기준축(row)이므로, 축의 수직방향으로 각각의 아이템들을 가운데 정렬 */
+    margin-left: 15px;
+    font-size:23px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.nav-menu{
+    color:black;
+    text-decoration: none;
+}
+
+.nav-menu:hover{
+    color:white;
+    transition: 0.3s;
+}
+
+/*dashboard*/
+h1{
+    margin-top: 100px;  
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;
+}
+
+.highlight{
+    color:white;
+    background-color: rgb(31, 155, 237);
+}
+
+
+/*info*/
+.middle-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size:30px;
+    border-bottom: 3px solid black;
+}
+
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0px;
+}
+
+#profile-picture{
+    width:400px;
+    margin-right: 40px;
+
+}
+
+.introduction>h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.introduction>p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:18px;
+}
+
+
+/*value*/
+.value-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top:50px;
+    margin-left: 200px;
+
+}
+
+.value{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.value-icon{
+    width: 110px;
+    height: 110px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 3px solid black;
+    border-radius: 100px;
+    background-color: white;
+    padding:9px;
+}
+
+.value-name{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.value-exp{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 10px;
+}
+
+.hash{
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+/*service*/
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.service-section1{
+    display: flex;
+    flex-direction: row;
+}
+
+.service-exp1{
+    margin-top: 370px;
+    margin-left:20px;
+}
+
+.service-tittle{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 50px;
+}
+
+.service-content1{
+    margin-top:0px;
+    margin-bottom: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font:bold;
+    font-size: 20px;
+}
+
+.service-section2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top:30px;
+}
+
+.service-exp2{
+    margin-top: 120px;
+    margin-right:20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#service-picture1{
+    width: 420px;
+    height: 500px;
+}
+
+#service-picture2{
+    width: 400px;
+}
+
+.service-content2{
+    margin-top:0px;
+    margin-bottom: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font:bold;
+    font-size: 18px;
+}
+
+.highlight2{
+    font-size: 30px;
+}
+
+.service-section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.service-section3>h4{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+
+}
+
+.service-section3>p{
+    font-size: 18px;
+}
+
+
+
+
+
+/*footer*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:400px;
+}
+
+.contact{
+    font-size: 50px;
+    font-family: 'Do Hyeon', sans-serif;
+    border-bottom: 4px solid black;
+    margin-bottom: 15px;
+
+}
+
+.links>a{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:black;
+    margin-left:25px;
+}
+
+.links>a:hover{
+    color: white;
+}
+
+.footer-comment>a{
+    text-decoration: none;
+    color:black;
+}
+
